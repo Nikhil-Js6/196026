@@ -1,0 +1,71 @@
+.train {
+    width: 95%;
+    height: fit-content;
+    padding: .8rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    .train-name {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 3px;
+        color: #333;
+    }
+    .timing {
+        font-size: 13px;
+    }
+
+.body {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .card {
+        width: 190px;
+        margin: 0 20px;
+        padding-top: .5rem;
+        border-radius: .35rem;
+        background-color: #e9ffff;
+    }
+    .card-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .seats {
+        margin: 0 16px;
+        justify-self: flex-start;
+    }
+    .price {
+        margin: 0 16px;
+        align-items: flex-end;
+    }
+    .avl {
+        padding: 20px 0;
+        font-weight: 500;
+        color: rgb(29, 190, 29)
+    }
+
+.delay {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 13px;
+    color: rgb(255, 149, 0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
