@@ -10,6 +10,8 @@ router.get('/', async (req, res) => {
             const arr = response.data.numbers;
             
             if (arr.length > 0) {
+                // Filtering duplicate values: 
+                
                 for (let i = 0; i < arr.length; i++) {
                     if (!numbers.includes(arr[i])) {
                         numbers.push(arr[i]);
@@ -23,7 +25,17 @@ router.get('/', async (req, res) => {
             };
         }
     }
-    numbers.sort((a, b) => { return a - b });
+    //  Sorting the number in ascending order:
+    
+    for (let i = 0; i < numbers.length; i++) {     
+        for (let j = i + 1; j < numbers.length; j++) {     
+            if (numbers[i] > numbers[j]) {    
+               temp = numbers[i];    
+               numbers[i] = numbers[j];    
+               numbers[j] = temp;    
+            }     
+        }     
+    }    
 
     res.json({numbers});
 });
