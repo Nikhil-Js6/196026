@@ -1,0 +1,72 @@
+.singleTrain {
+    width: 90%;
+    height: 70vh;
+    padding: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+}
+.card-head {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .card-train-name {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0;
+        color: #333;
+    }
+    .card-timing {
+        font-size: 16px;
+    }
+
+.card-body {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .card {
+        width: 190px;
+        margin: 0 20px;
+        padding: .5rem;
+        border-radius: .35rem;
+        background-color: #e9ffff;
+    }
+    .card-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-seats {
+        margin: 0 16px;
+        justify-self: flex-start;
+    }
+    .card-price {
+        margin: 0 16px;
+        align-items: flex-end;
+    }
+    .card-avl {
+        padding: 20px 0;
+        font-weight: 500;
+        color: rgb(29, 190, 29)
+    }
+
+.card-delay {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 13px;
+    color: rgb(255, 149, 0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
