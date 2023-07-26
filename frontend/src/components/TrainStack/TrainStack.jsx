@@ -5,13 +5,15 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Train from '../TrainCard/Train';
 
+const width = window.innerWidth > 720 ? '65%' : '90%';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  width: '65%',
+  width,
   height: '50%',
   alignSelf: 'center',
 }));
